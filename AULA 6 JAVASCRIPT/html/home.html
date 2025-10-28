@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>HOME</title>
+</head>
+<body onLoad="mudarImagem()">
+
+<div class="corpo_site">
+
+    <div class="espaco_superior"></div>
+
+    <div class="texto_principal">
+        <h1>
+            <span class="palavra-chave">OFERTAS</span> -
+            <span class="palavra-chave">IMPERDÍVEIS</span> -
+            <span class="palavra-chave">A MELHOR DA REGIÃO</span> -
+            <span class="palavra-chave">PARA SUA CASA</span>
+        </h1>
+    </div>
+
+    <div class="cabecalho_superior">
+        <div class="lado_direito_imagem">
+            <img src="../img/logo.png" class="logo">
+        </div>
+        <div class="lado_esquerdo">
+            <form onsubmit="return false;">
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M21 21l-4.35-4.35M10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="espaco_superior"></div>
+
+    <div class="cabecalho_inferior">
+        <a href="home.html" class="meu-botao">HOME</a>
+        <div class="dropdown">
+            <button class="meu-botao">CLASSES</button>
+            <div class="dropdown-content">
+                <a href="cantinho_ferramentas.html">CANTINHO FERRAMENTAS</a>
+                <a href="guia_verde.html">GUIA VERDE</a>
+                <a href="servicos_do_jardim.html">SERVIÇOS DO JARDIM</a>
+            </div>
+        </div>
+        <a href="contato.html" class="meu-botao">CONTATOS</a>
+        <a href="galeria.html" class="meu-botao">GALERIA</a>
+    </div>
+        
+
+    <div class="imagens_passando">
+        <button  class="seta esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+            <img id="minhaImagem" src="../img/banner_4.jpg" alt="Banner" class="banner">
+        <button  class="seta direita" onclick="mudarImagem(1)">&#10095;</button>
+    </div>
+
+    <div class="corpo_inferior">
+        <div class="corpo_inferior_superior">
+            <div class="lado_direito_home">
+                <div class="historia_floricultura">
+                    <h2>Nossa História</h2>
+                    <p>
+                        Fundada há mais de 20 anos, a <strong>Floricultura Entre Folhas</strong> nasceu do amor por cores, perfumes e pela vida que floresce em cada jardim. 
+                        Tudo começou em um pequeno quintal no interior de Santa Catarina, onde Dona Eliza, apaixonada por plantas, 
+                        cultivava flores para alegrar as casas da vizinhança. Seu sonho era simples: espalhar beleza e natureza onde antes havia apenas concreto.
+                    </p>
+                    <p>
+                        Aos poucos, o pequeno jardim se transformou em um espaço cheio de vida, visitado por amigos, clientes e curiosos. 
+                        O que começou como uma banca improvisada na calçada virou uma loja cheia de cores, aromas e histórias. 
+                        As primeiras flores vendidas foram margaridas e violetas, que até hoje continuam sendo símbolos da nossa identidade.
+                    </p>
+                    <p>
+                        Com o tempo, a floricultura se expandiu e conquistou corações por toda a região. 
+                        Hoje somos referência em arranjos florais, paisagismo e decoração natural, sempre mantendo o mesmo cuidado artesanal que marcou o início da nossa jornada. 
+                        Cada planta é tratada com carinho e respeito, como se fosse parte da família — e, de certa forma, é.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lado_esquerdo_home">
+                <div class="anuncio">
+                    <div class="parte_de_cima_1"></div>
+                    <div class="parte_de_baixo">
+                        <a href="https://veja.abril.com.br/coluna/jardineiro-casual/o-show-dos-ipes-roxos-no-inverno-mais-seco-dos-ultimos-anos/" class="anuncio">
+                            No inverno mais seco dos últimos anos, o show dos ipês roxos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="espaco_superior"></div>
+
+        <div class="corpo_inferior_inferior">
+            <div class="lado_direito_home">
+                <div class="historia_floricultura">
+                    <h2> Nosso Propósito</h2>
+                    <p>
+                        Na <strong>Entre Folhas</strong>, acreditamos que cada planta tem uma história para contar. 
+                        Nosso propósito é conectar pessoas à natureza, transformando espaços comuns em refúgios de paz, beleza e harmonia. 
+                        Mais do que vender flores, queremos inspirar momentos de cuidado, afeto e reconexão com o mundo natural.
+                    </p>
+                    <p>
+                        Valorizamos o trabalho local, apoiando produtores da região e promovendo o cultivo sustentável. 
+                        Desde a escolha das sementes até o transporte das flores, cada etapa é feita com responsabilidade ambiental, 
+                        buscando reduzir o impacto no planeta e garantir a saúde do solo e das espécies nativas.
+                    </p>
+                    <p>
+                        Também acreditamos que as flores têm poder de transformar vidas. 
+                        Nossos projetos sociais doam mudas e ministram oficinas de jardinagem para escolas e comunidades, 
+                        levando aprendizado, alegria e um pedacinho de verde a quem mais precisa.
+                    </p>
+                    <p>
+                        Hoje, seguimos crescendo com os pés na terra e o coração em flor, 
+                        honrando o legado de Dona Eliza e espalhando o encanto que só a natureza é capaz de oferecer. 
+                        Seja para um presente, um novo jardim ou apenas um respiro de paz, 
+                        a <strong>Floricultura Entre Folhas</strong> está aqui para florescer junto com você.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lado_esquerdo_home">
+                <div class="anuncio">
+                    <div class="parte_de_cima_2"></div>
+                    <div class="parte_de_baixo">
+                        <a href="https://veja.abril.com.br/videos/o-jardineiro-casual/os-jardins-suspensos-da-mata-atlantica/" class="anuncio">
+                            Os jardins suspensos da Mata Atlântica
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="rodape_inferior">
+        <p>© 2025 Entre Folhas. Todos os direitos reservados.</p>
+    </div> 
+</div>
+</body>
+</html>

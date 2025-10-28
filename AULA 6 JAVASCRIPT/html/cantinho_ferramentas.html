@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantinho das Ferramentas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ferramentas.js" defer></script>
+</head>
+<body onload="iniciarBannerFerramentas()">
+
+<div class="corpo_site">
+
+    <div class="espaco_superior"></div>
+
+    <div class="texto_principal">
+        <h1>
+            Cantinho das <span class="palavra-chave">Ferramentas</span>
+        </h1>
+    </div>
+
+    <div class="cabecalho_superior">
+        <div class="lado_direito_imagem">
+            <img src="../img/logo.png" class="logo">
+        </div>
+        <div class="lado_esquerdo">
+            <form onsubmit="return false;">
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M21 21l-4.35-4.35M10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="espaco_superior"></div>
+
+    <div class="cabecalho_inferior">
+        <a href="home.html" class="meu-botao">HOME</a>
+        <div class="dropdown">
+            <button class="meu-botao">CLASSES</button>
+            <div class="dropdown-content">
+                <a href="cantinho_ferramentas.html">CANTINHO FERRAMENTAS</a>
+                <a href="guia_verde.html">GUIA VERDE</a>
+                <a href="servicos_do_jardim.html">SERVIÇOS DO JARDIM</a>
+            </div>
+        </div>
+        <a href="contato.html" class="meu-botao">CONTATOS</a>
+        <a href="galeria.html" class="meu-botao">GALERIA</a>
+    </div>
+
+    <div class="imagens_passando">
+        <img id="bannerFerramentas" src="../img/banner_ferramentas1.jpg" alt="Banner Ferramentas">
+    </div>
+
+    <div class="corpo_inferior">
+        <div class="corpo_inferior_superior">
+            <div class="lado_direito_home">
+                <div class="historia_floricultura">
+                    <h2>Ferramentas Essenciais</h2>
+                    <p>
+                        No nosso Cantinho das Ferramentas, você encontra todos os utensílios para cuidar do seu jardim com facilidade.  
+                        Desde pás e regadores até tesouras de poda e luvas, tudo selecionado para qualidade e durabilidade.  
+                        Transforme seu espaço verde em um verdadeiro refúgio com as ferramentas certas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lado_esquerdo_home">
+                <div class="galeria_container">
+                    <div class="card_planta">
+                        <img src="../img/pa_de_jardim.jpeg" alt="Pá de Jardim">
+                        <div class="info_planta">
+                            <h3>Pá de Jardim</h3>
+                            <p>Perfeita para cavar e plantar mudas.</p>
+                            <strong>R$ 45,90</strong>
+                        </div>
+                    </div>
+
+                    <div class="card_planta">
+                        <img src="../img/tesoura_poda.jpg" alt="Tesoura de Poda">
+                        <div class="info_planta">
+                            <h3>Tesoura de Poda</h3>
+                            <p>Ideal para aparar galhos e flores.</p>
+                            <strong>R$ 59,90</strong>
+                        </div>
+                    </div>
+
+                    <div class="card_planta">
+                        <img src="../img/regador.webp" alt="Regador de Metal">
+                        <div class="info_planta">
+                            <h3>Regador</h3>
+                            <p>Distribui água uniformemente sem danificar as folhas.</p>
+                            <strong>R$ 39,90</strong>
+                        </div>
+                    </div>
+
+                    <div class="card_planta">
+                        <img src="../img/luva_latex.webp" alt="Luvas de Jardinagem">
+                        <div class="info_planta">
+                            <h3>Luvas</h3>
+                            <p>Protege as mãos durante o manuseio de plantas.</p>
+                            <strong>R$ 29,90</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rodape_inferior">
+        <p>© 2025 Entre Folhas. Todos os direitos reservados.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3d6bc;
+}
+
+.corpo_site {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #b3d6bc;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.espaco_superior {
+    width: 100%;
+    height: 50px;
+    background-color: #b3d6bc;
+}
+
+.texto_principal {
+    width: 100%;
+    height: 70px;
+    padding-top: 1px;
+    background-color: #afc4a6;    
+}
+
+.texto_principal h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.palavra-chave {
+    color: rgb(19, 98, 31);
+}
+
+.cabecalho_superior {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.lado_direito_imagem {
+    width: 50%;
+    padding-left: 50px;
+    background-color: #709c5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.lado_esquerdo {
+    width: 50%;
+    background-color: #709c5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button svg {
+    width: 18px;
+    height: 18px;
+    fill: #888;
+}
+
+button:hover svg {
+    fill: #555;
+}
+
+.cabecalho_inferior {
+    width: 100%;
+    height: 100px;
+    background-color: #709c5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.meu-botao {
+    background-color: #709c5e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    border-radius: 5px;
+}
+
+.meu-botao:hover {
+    background-color: #085b13fd;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #709c5e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #085b13fd;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.imagens_passando {
+    position: relative;
+    width: 1300px;
+    height: 500px;
+    margin: 40px auto;
+    background-color: #afc4a6;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.imagens_passando img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #b3d6bc;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.seta:hover {
+    background-color: #b3d6bc
+}
+
+.seta.esquerda {
+    left: 10px;
+}
+
+.seta.direita {
+    right: 10px;
+}
+
+.corpo_inferior {
+    background-color: #b3d6bc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo_inferior_superior,
+.corpo_inferior_inferior {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 900px;
+}
+
+.lado_direito_home {
+    width: 60%;
+    background-color: rgb(126, 170, 128);
+    margin-left: 90px;
+    border-radius: 10px;
+}
+
+.lado_esquerdo_home {
+    width: 40%;
+    background-color: #b3d6bc;
+}
+
+.formulario_contato {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.formulario_contato h2 {
+    color: #13621f;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.formulario_contato p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.form_contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.form_contato label {
+    color: #13621f;
+    font-weight: bold;
+}
+
+.form_contato input,
+.form_contato textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+}
+
+.botao_enviar {
+    background-color: #709c5e;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao_enviar:hover {
+    background-color: #085b13fd;
+}
+
+.info_contato {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.info_contato h3 {
+    color: #13621f;
+    margin-bottom: 10px;
+}
+
+.info_contato p {
+    color: #333;
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.galeria_container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.card_planta {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_planta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card_planta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.info_planta {
+    position: absolute;
+    bottom: 0;
+    background: rgba(112,156,94,0.9);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.card_planta:hover .info_planta {
+    transform: translateY(0);
+}
+
+.info_planta h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.info_planta p {
+    font-size: 14px;
+    color: #f0f0f0;
+}
+
+.info_planta strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 15px;
+    color: #ffe36b;
+}
+
+.anuncio {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border-radius: 15px;
+
+}
+
+.parte_de_cima_1 {
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/ipe_roxo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parte_de_cima_2 {
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/jardins_mata_atlantica.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parte_de_baixo {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.anuncio a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #13621f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.historia_floricultura {
+    padding: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.historia_floricultura h2 {
+    color: #f0f0f0;
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+
+.rodape_inferior {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-color: rgb(126, 170, 128);
+    height: 120px;
+
+}
+
+.rodape_inferior p {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 16px;
+    
+}
+
+.banner_servicos {
+    width: 100%;
+    height: 250px;
+    background-image: url('../img/banner_servicos.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    border-radius: 15px;
+    margin: 40px auto 20px auto;
+}
+
+.banner_servicos span {
+    color: #ffe36b;
+}
+
+.servicos_container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Banner topo do Guia Verde */
+.banner_guia {
+    width: 100%;
+    height: 250px;
+    background-image: url('../img/banner_guia.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    border-radius: 15px;
+    margin: 40px auto 20px auto;
+}
+
+.banner_guia span {
+    color: #ffe36b;
+}
+
+/* Grid de dicas/tutorial */
+.dicas_container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.card_dica {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_dica:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.card_dica img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info_dica {
+    padding: 15px;
+    text-align: left;
+}
+
+.info_dica h3 {
+    color: #13621f;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.info_dica p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+

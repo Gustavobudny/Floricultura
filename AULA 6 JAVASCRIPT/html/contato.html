@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>CONTATO</title>
+</head>
+<body onLoad="mudarImagem()">
+
+<div class="corpo_site">
+
+    <div class="espaco_superior"></div>
+
+    <div class="texto_principal">
+        <h1>
+            <span class="palavra-chave">FALE</span> -
+            <span class="palavra-chave">CONOSCO</span> -
+            <span class="palavra-chave">TIRE SUAS DÚVIDAS</span> -
+            <span class="palavra-chave">OU ENVIE SEU FEEDBACK</span>
+        </h1>
+    </div>
+
+    <div class="cabecalho_superior">
+        <div class="lado_direito_imagem">
+            <img src="../img/logo.png" class="logo">
+        </div>
+        <div class="lado_esquerdo">
+            <form onsubmit="return false;">
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M21 21l-4.35-4.35M10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="espaco_superior"></div>
+
+    <div class="cabecalho_inferior">
+        <a href="home.html" class="meu-botao">HOME</a>
+        <div class="dropdown">
+            <button class="meu-botao">CLASSES</button>
+            <div class="dropdown-content">
+                <a href="cantinho_ferramentas.html">CANTINHO FERRAMENTAS</a>
+                <a href="guia_verde.html">GUIA VERDE</a>
+                <a href="servicos_do_jardim.html">SERVIÇOS DO JARDIM</a>
+            </div>
+        </div>
+        <a href="contato.html" class="meu-botao">CONTATOS</a>
+        <a href="galeria.html" class="meu-botao">GALERIA</a>
+    </div>
+
+    <div class="corpo_inferior" style="background-color: #b3d6bc; padding: 60px 0;">
+        <div class="formulario_contato">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Preencha o formulário abaixo e retornaremos o mais breve possível.</p>
+
+            <form class="form_contato" onsubmit="return false;">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" placeholder="Motivo do contato">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="6" placeholder="Digite sua mensagem aqui..." required></textarea>
+
+                <button type="submit" class="botao_enviar">Enviar</button>
+            </form>
+
+            <div class="info_contato">
+                <h3>Outras formas de contato:</h3>
+                <p>(48) 99765-6645</p>
+                <p> atendimento@entre_folhas.com.br</p>
+                <p> Rua das Palmeiras, 590 - Florianópolis/SC</p>
+            </div>
+        </div>
+    </div>
+    <div class="rodape_inferior">
+        <p>© 2025 Entre Folhas. Todos os direitos reservados.</p>
+    </div> 
+</div>
+
+</body>
+</html>
